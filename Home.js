@@ -1,4 +1,4 @@
-const startSound = new Audio("na.mp3");
+const startSound = new Audio("mp3/na.mp3");
 
 function startGame() {
   const player1 = document.getElementById('player1').value.trim();
