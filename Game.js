@@ -8,10 +8,10 @@ document.getElementById('currentTurn').textContent = `${player1} (X)`;
 
 document.body.classList.add(`${theme}-theme`);
 
-const moveSound = new Audio("mp3/na.mp3");
+const moveSound = new Audio("mp3/x and o.mp3");
 const winSound = new Audio("mp3/fo.mp3");
 const drawSound = new Audio("mp3/ta.mp3");
-const buttonSound = new Audio("mp3/x and o.mp3");
+const buttonSound = new Audio("mp3/na.mp3");
 
 let currentPlayer = "X";
 let gameOver = false;
