@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لعبة X و O</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <h1>مرحباً بكم في لعبة X و O</h1>
+
+    <div class="input-group">
+      <label for="player1">اسم اللاعب الأول:</label>
+      <input type="text" id="player1" placeholder="أدخل الاسم">
+    </div>
+
+    <div class="input-group">
+      <label for="player2">اسم اللاعب الثاني:</label>
+      <input type="text" id="player2" placeholder="أدخل الاسم">
+    </div>
+
+    <div class="theme-select">
+      <label>اختر السمة:</label>
+      <select id="theme">
+        <option value="light">وضع نهاري</option>
+        <option value="dark">وضع ليلي</option>
+        <option value="colored">وضع ملون</option>
+      </select>
+    </div>
+
+    <button onclick="startGame()">ابدأ اللعبة</button>
+  </div>
+
+  <script src="Home.js"></script>
+</body>
+</html>

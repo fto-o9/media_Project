@@ -1,0 +1,112 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  text-align: center;
+  border: 2px solid;
+  padding: 30px;
+  border-radius: 15px;
+  transition: border-color 0.3s;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #a48ccf;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8c74ba;
+}
+
+
+.light-theme {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.light-theme .cell {
+  background-color: #f0f0f0;
+  color: #000000;
+  border: 2px solid #ccc;
+}
+
+.light-theme .container {
+  border-color: #cccccc;
+}
+
+
+.dark-theme {
+  background-color: #1e1e2f;
+  color: #a987dc;
+}
+
+.dark-theme .cell {
+  background-color: #3a3a5c;
+  color: #9e86c2;
+}
+
+.dark-theme .container {
+  border-color: #6a5acd;
+}
+
+
+.colored-theme {
+  background-color: #fce4ec; 
+  color: #4a148c;
+}
+
+.colored-theme .cell {
+  background-color: #f06292;
+  color: white;
+  border: 2px solid #ec407a;
+}
+
+.colored-theme .container {
+  border-color: #ad1457;
+}
+
+  
+.win-highlight {
+  background-color: #ffc107;
+  animation: winBlink 0.5s ease-in-out infinite;
+}
+
+@keyframes winBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

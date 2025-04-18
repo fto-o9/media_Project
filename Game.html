@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللعبة</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>لعبة XوO</h1>
+        <div class="player-info">
+            <p id="player1Name"></p>
+            <p id="player2Name"></p>
+            <p id="currentTurn"></p>
+        </div>
+        
+        <div class="board">
+            <div class="cell" onclick="makeMove(this, 0)"></div>
+            <div class="cell" onclick="makeMove(this, 1)"></div>
+            <div class="cell" onclick="makeMove(this, 2)"></div>
+            <div class="cell" onclick="makeMove(this, 3)"></div>
+            <div class="cell" onclick="makeMove(this, 4)"></div>
+            <div class="cell" onclick="makeMove(this, 5)"></div>
+            <div class="cell" onclick="makeMove(this, 6)"></div>
+            <div class="cell" onclick="makeMove(this, 7)"></div>
+            <div class="cell" onclick="makeMove(this, 8)"></div>
+        </div>
+
+        <p id="gameResult"></p>
+        
+        <button onclick="resetGame()">إعادة تعيين</button>
+        <button onclick="goBackHome()">الرجوع إلى الصفحة الرئيسية</button>
+    </div>
+    
+    
+
+    <script src="Game.js"></script>
+</body>
+</html>
